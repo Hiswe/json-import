@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>import</title>
+</head>
+
+<body>
+  <h1>import example</h1>
+  <pre class="js-result">…loading</pre>
+  <p><a href="https://caniuse.com/#search=fetch">browser support > IE11 (76.62%)</a></p>
+  <nav>
+    <a href="/">home</a>
+    <a href="/fetch.html">fetch</a>
+    <a href="/import.html">import</a>
+  </nav>
+  <script type="module">
+    // can't use JSON with JS import
+    import json from '/data.js'
+    console.log(json)
+    document.querySelector(`.js-result`).textContent = JSON.stringify(json)
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "json-import",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Hiswe/json-import.git",
+  "author": "Hiswe <hiswehalya@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run serve",
+    "build": "parcel build src/parcel.html --out-dir public",
+    "dev": "npm run serve",
+    "serve": "http-server"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "parcel": "^1.9.7"
+  }
+}

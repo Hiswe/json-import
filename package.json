@@ -6,9 +6,9 @@
   "author": "Hiswe <hiswehalya@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "npm run serve",
-    "build": "parcel build src/parcel.html --out-dir public",
-    "dev": "npm run serve",
+    "start": "npm run dev",
+    "build": "parcel build src/bundle.js --out-dir public",
+    "dev": "npm run build && npm run serve",
     "serve": "http-server"
   },
   "devDependencies": {

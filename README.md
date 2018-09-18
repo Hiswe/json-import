@@ -32,7 +32,7 @@ server will be listening on http://127.0.0.1:8080
 
 ### [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
-- Present in all browsers > IE11.
+- Present in all browsers > IE11. See [caniuse](https://caniuse.com/#search=fetch)
 - Replacement of XMLHttpRequest.
 - Can use a [unfetch polyfill](https://github.com/developit/unfetch)
 
@@ -44,10 +44,10 @@ fetch('/data.json')
 
 ### [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 
-- Present in all browsers > IE11
+- Present in all browsers > IE11. See [caniuse](https://caniuse.com/#search=module)
 - Can't import JSON file
 - Have to add the `type="module"` attribute on the script tag
-- No polyfill
+- No [real polyfill](https://github.com/ModuleLoader/browser-es-module-loader)
 
 ```js
 import json from '/data.js'
